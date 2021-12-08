@@ -193,6 +193,11 @@ footer {
 
 /* Tablet View */
 @media screen and (min-width: 750px){
+  h1 {
+    font-size: 50px;
+    letter-spacing: 20px;
+  }
+
   body {
     color: white;
   }
@@ -258,3 +263,88 @@ footer {
   }
 }
 
+/* Desktop View */
+@media screen and (min-width: 1200px){
+  h1 {
+    font-size: 80px;
+    letter-spacing: 40px;
+  }
+  
+
+   /* Animating my name on index.html */
+  h1:hover {
+    animation: squish 3s linear infinite;
+  }
+
+  @keyframes squish {
+    50% {transform: rotateY(60deg);}
+  }
+
+  /* Animating images on index.html */
+  @keyframes fadeInAndOut {
+    0% {
+      opacity:1;
+    }
+    45% {
+      opacity:1;
+    }
+    55% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  .images .sd {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+  }
+
+  .images .sunset {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+  }
+
+  .images .headshot {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2.75s;
+    animation-direction: alternate;
+  }
+
+  .images .ocean {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+  }
+
+  .images .nyc {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2.25s;
+    animation-direction: alternate;
+  }
+
+  
+ 
+
+
+}
+
+
+@media (prefers-reduced-motion) {
+  h1:hover, .images .sd, .images .sunset, .images .headshot, .images .ocean, .images .nyc{
+      animation: none;
+  }
+}
