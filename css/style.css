@@ -16,6 +16,10 @@ p {
   padding: 10px;
 }
 
+.indexP {
+  visibility:hidden;
+}
+
 a.skip-content{
   background: #E7EFF3;
   left: 0;
@@ -82,7 +86,7 @@ a:visited {
 
 img {
   border: 5px solid #E7EFF3;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .hide-mobile {
@@ -151,7 +155,7 @@ img {
   text-align: center;
   font-size: 22px;
   padding: 40px 50px 50px 50px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 /* Making flipcards flex */
@@ -265,6 +269,37 @@ footer {
 
 /* Desktop View */
 @media screen and (min-width: 1200px){
+  .indexBody {
+    background-image: none;
+  }
+  .indexHeader {
+    height: 100vh;
+    background-image: url("../imgs/swirly.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    color: white;
+  }
+
+  .indexHeader > h1 {
+    padding-top: 35vh;
+  }
+
+  .indexP {
+    visibility: visible;
+    padding-top: 2vh;
+    font-size: 50px;
+    font-family: 'Corinthia', cursive;
+    text-align: center;
+  }
+  
+  /* Above here is all new for parallax image */
+  
+  .images-extra {
+    height: 50%;
+  }
+  
   h1 {
     font-size: 80px;
     letter-spacing: 40px;
@@ -302,6 +337,7 @@ footer {
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-direction: alternate;
+    border: none;
   }
 
   .images .sunset {
@@ -310,6 +346,7 @@ footer {
     animation-iteration-count: infinite;
     animation-duration: 2.5s;
     animation-direction: alternate;
+    border: none;
   }
 
   .images .headshot {
@@ -318,6 +355,7 @@ footer {
     animation-iteration-count: infinite;
     animation-duration: 2.75s;
     animation-direction: alternate;
+    border: none;
   }
 
   .images .ocean {
@@ -326,6 +364,7 @@ footer {
     animation-iteration-count: infinite;
     animation-duration: 2s;
     animation-direction: alternate;
+    border: none;
   }
 
   .images .nyc {
@@ -334,11 +373,150 @@ footer {
     animation-iteration-count: infinite;
     animation-duration: 2.25s;
     animation-direction: alternate;
+    border: none;
   }
 
-  
- 
+  .desktopOcean {
+    border: 3px solid #253a3f;
+  }
 
+  /* Make paper images farther apart */
+  .flip-container {
+    perspective: 1000px;
+    margin: 20px;
+  }
+
+  hr.solid {
+    border-top: 3px solid #172022;
+  }
+
+  .formTitle {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 20px;
+    font-weight: bold;
+  }
+
+  form {
+    background-image: url("../imgs/croppedSwirly.png");
+    margin: auto;
+    position: relative;
+    width: 700px;
+    height: 550px;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #E7EFF3;
+    padding: 10px;
+    border: 3px solid #253a3f;
+  }
+
+  input, textarea {
+    width: 400px;
+    display: block;
+    border: 1px solid #b0c6d1;
+    height: 25px;
+    font-family: inherit;
+  }
+
+  textarea {
+    height: 50px;
+  }
+
+  .formFeedback {
+    text-align: center;
+  }
+
+  button {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #2B4951;
+    color: #E7EFF3;
+    font-family: 'Reem Kufi', sans-serif;
+    border: 1p solid #172022;
+    box-shadow: #b0c6d1;
+    font-size: 30px;
+  }
+
+  /* Paper Images */
+  .longboards {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 220px 220px 220px 220px 200px;
+    grid-row-gap: 5px;
+    grid-column-gap: 15px;
+  }
+
+  img.rowDown1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  img.rowDown2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  img.rowDown3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  img.rowDown4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  img.rowDown5 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  img.rowDown6 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  img.rowDown7 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  img.rowDown8 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .hideDesktop {
+    display: none;
+  }
+  
+  .chairs {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+  }
 
 }
 
@@ -346,5 +524,10 @@ footer {
 @media (prefers-reduced-motion) {
   h1:hover, .images .sd, .images .sunset, .images .headshot, .images .ocean, .images .nyc{
       animation: none;
+  }
+  .indexHeader {
+    background-image: none;
+    background-attachment:unset;
+    background-size:auto;
   }
 }
