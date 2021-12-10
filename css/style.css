@@ -587,5 +587,9 @@ footer {
     transition: none;
 
   }
+
+  a.skip-content {
+    transition: none;
+  }
 }
 
