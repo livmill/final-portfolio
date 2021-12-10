@@ -1,0 +1,588 @@
+nav {
+  background-color: #E7EFF3;
+  background-image:none;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size:large;
+  padding-bottom: 5px;
+}
+
+body {
+  background-image: url("../imgs/background-image.png");
+  background-color:#2B4951;
+  color: #E7EFF3;
+}
+
+p {
+  padding: 10px;
+}
+
+.indexP {
+  visibility:hidden;
+}
+
+a.skip-content{
+  background: #E7EFF3;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  font-family: 'Reem Kufi', sans-serif;
+  color:#E7EFF3;
+  background-color: #2B4951;
+}
+
+a.skip-content:focus{
+  top:0px;
+  color: black;
+  text-decoration-style: solid;
+  font-family: 'Reem Kufi', sans-serif;
+  color:#E7EFF3;
+  background-color: #2B4951;
+}
+
+main {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Reem Kufi', sans-serif;
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  color:#E7EFF3;
+}
+
+h2 {
+  font-family: 'Reem Kufi', sans-serif;
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color:#E7EFF3;
+}
+
+nav li{
+	padding:2px;
+	display: block;
+}
+
+
+a {
+  color: #2B4951;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #6295a1;
+
+}
+
+a:visited {
+  color:#2B4951;
+}
+
+img {
+  border: 5px solid #E7EFF3;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+/* Index images */
+.images, .images-extra {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+form {
+  background-image: url("../imgs/croppedSwirly.png");
+  margin: auto;
+  position: relative;
+  width: 450px;
+  height: 400px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #E7EFF3;
+  padding: 10px;
+  border: 3px solid #253a3f;
+}
+
+.formTitle {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 15px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 300px;
+  display: block;
+  border: 1px solid #b0c6d1;
+  height: 25px;
+  font-family: inherit;
+}
+
+.formFeedback {
+  text-align: center;
+}
+
+button {
+  width: 80px;
+  height: 45px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #2B4951;
+  color: #E7EFF3;
+  font-family: 'Reem Kufi', sans-serif;
+  border: 1p solid #172022;
+  box-shadow: #b0c6d1;
+  font-size: 20px;
+}
+
+/* Digital Images */
+.first-group, .second-group, .third-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.first-group img, .second-group img, .third-group img {
+  justify-self: center;
+  width: 350px;
+  height: 350px;
+}
+
+/* Paper images */
+.flex-container img {
+  width: 360px;
+  height: 280px;
+}
+
+.flip-container {
+  perspective: 1000px;
+  margin: 5px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 360px;
+  height: 280px;
+}
+
+/* Speed of the flip */
+.flipper {
+  transform-style: preserve-3d;
+  transition: 0.6s;
+  position: relative;
+}
+
+.flip-container:focus .flipper, .flip-container.focus .flipper {
+  transform: rotateY(180deg);
+}
+
+
+/* Hiding the back while swapping */
+.front, .back {
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+/* Front above back */
+.front {
+  z-index: 2;
+}
+
+/* Rotate back */
+.back {
+  transform: rotateY(180deg);
+  background-color: #2B4951;
+  text-align: center;
+  font-size: 22px;
+  padding: 40px 50px 50px 50px;
+}
+
+/* Making flipcards flex */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Handmade images */
+.longboards {
+  display:grid;
+  grid-template-columns: auto;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+}
+
+.chairs {
+  display:grid;
+  grid-template-columns: auto;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+}
+
+.currentText{
+  font-weight: bold;
+  border-bottom: 4px solid #2B4951;
+  text-transform:lowercase;
+}
+
+footer {
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: lighter;
+  background-color: #E7EFF3;
+  background-image:none;
+  color:#2B4951;
+  text-align: center;
+}
+
+/* --------------------------------------------- Tablet View ------------------------------------------------ */
+@media screen and (min-width: 750px){
+  h1 {
+    font-size: 50px;
+    letter-spacing: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    right:0;
+    left:0;
+  }
+
+  /* Index Page */
+  .hide-mobile {
+    display:initial;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .images-extra {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  /* Digital Images */
+  .first-group, .second-group, .third-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  /* Paper is responsive because it was made as flex from the beginning */
+
+  /* Handmade images */
+  .longboards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+  }
+  
+  .chairs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .formTitle {
+    font-size: 40px;
+  }
+
+  form {
+    width: 700px;
+    height: 425px;
+  }
+
+  input, textarea {
+    width: 400px;
+    display: block;
+    border: 1px solid #b0c6d1;
+    height: 25px;
+    font-family: inherit;
+  }
+
+}
+
+/* --------------------------------------------- Desktop View ---------------------------------------------*/
+@media screen and (min-width: 1200px){
+  .indexBody {
+    background-image: none;
+  }
+  .indexHeader {
+    height: 100vh;
+    background-image: url("../imgs/swirly.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    color: white;
+  }
+
+  .indexHeader > h1 {
+    padding-top: 35vh;
+  }
+
+  .indexP {
+    visibility: visible;
+    padding-top: 2vh;
+    font-size: 50px;
+    font-family: 'Corinthia', cursive;
+    text-align: center;
+  }
+  
+  /* Above here is all new for parallax image */
+  
+  .images-extra {
+    height: 50%;
+  }
+  
+  h1 {
+    font-size: 80px;
+    letter-spacing: 40px;
+  }
+  
+
+   /* Animating my name on index.html */
+  h1:hover {
+    animation: squish 3s linear infinite;
+  }
+
+  @keyframes squish {
+    50% {transform: rotateY(60deg);}
+  }
+
+  /* Animating images on index.html */
+  @keyframes fadeInAndOut {
+    0% {
+      opacity:1;
+    }
+    45% {
+      opacity:1;
+    }
+    55% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  .images .sd {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    border: none;
+  }
+
+  .images .sunset {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    border: none;
+  }
+
+  .images .headshot {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2.75s;
+    animation-direction: alternate;
+    border: none;
+  }
+
+  .images .ocean {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    border: none;
+  }
+
+  .images .nyc {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2.25s;
+    animation-direction: alternate;
+    border: none;
+  }
+
+  .desktopOcean {
+    border: 3px solid #253a3f;
+  }
+
+  /* Make paper images farther apart */
+  .flip-container {
+    margin: 20px;
+  }
+
+  hr.solid {
+    border-top: 3px solid #172022;
+  }
+
+  .formTitle {
+    font-size: 50px;
+    letter-spacing: 20px;
+  }
+
+  form {
+    height: 550px;
+  }
+
+  textarea {
+    height: 50px;
+  }
+
+  button {
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  /* Paper Images */
+  .longboards {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 220px 220px 220px 220px 200px;
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+
+  img.rowDown1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  img.rowDown2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  img.rowDown3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  img.rowDown4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  img.rowDown5 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  img.rowDown6 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  img.rowDown7 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  img.rowDown8 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .hideDesktop {
+    display: none;
+  }
+
+}
+
+/* --------------------------------------- Prefers Reduced Motion ---------------------------------------*/
+@media (prefers-reduced-motion) {
+  h1:hover, .images .sd, .images .sunset, .images .headshot, .images .ocean, .images .nyc{
+      animation: none;
+  }
+  .indexHeader {
+    background-image: url("../imgs/swirly.png");
+    background-attachment:unset;
+    background-size:auto;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+
+    /* Paper images */
+  
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transition: none;
+    transition: 0s;
+    transform-style: none;
+  }
+
+  .flip-container:focus .flipper, .flip-container.focus .flipper {
+    transition: none;
+    transition: 0s;
+  }
+
+  .back:hover {
+    transition: none;
+  }
+
+  .back {
+    transition: none;
+
+  }
+}
+
