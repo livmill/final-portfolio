@@ -17,7 +17,10 @@ p {
 }
 
 .indexP {
-  visibility:hidden;
+  padding-top: 2vh;
+  font-size: 30px;
+  font-family: 'Corinthia', cursive;
+  text-align: center;
 }
 
 a.skip-content{
@@ -278,6 +281,10 @@ footer {
     display:initial;
   }
 
+  .indexP {
+    font-size: 40px;
+  }
+
   .images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -357,11 +364,7 @@ footer {
   }
 
   .indexP {
-    visibility: visible;
-    padding-top: 2vh;
     font-size: 50px;
-    font-family: 'Corinthia', cursive;
-    text-align: center;
   }
   
   /* Above here is all new for parallax image */
